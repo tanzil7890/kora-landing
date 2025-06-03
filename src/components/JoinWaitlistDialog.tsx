@@ -30,7 +30,7 @@ export function JoinWaitlistDialog({ isOpen, onClose }: JoinWaitlistDialogProps)
           >
             {/* Header with title and close button */}
             <div className="absolute top-0 left-0 right-0 h-16 bg-white border-b border-gray-100 flex items-center justify-between px-6 z-10">
-              <h2 className="text-lg font-medium text-gray-900">Schedule a Demo</h2>
+              <h2 className="text-lg font-medium text-gray-900">Let us know!</h2>
               <button
                 onClick={onClose}
                 className="p-2 hover:bg-gray-100 rounded-full transition-colors"
@@ -45,7 +45,7 @@ export function JoinWaitlistDialog({ isOpen, onClose }: JoinWaitlistDialogProps)
             {/* Calendar iframe */}
             <div className="w-full h-full pt-16">
               <iframe
-                src="https://dhkxxavs92m.typeform.com/to/EMu0WTAE?typeform-source=outhad.com"
+                src="https://dhkxxavs92m.typeform.com/to/IUK9R3KF"
                 className="w-full h-full"
                 frameBorder="0"
               />

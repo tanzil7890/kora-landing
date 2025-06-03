@@ -42,7 +42,7 @@ export function MobileBookDemoDialog({ isOpen, onClose }: MobileBookDemoDialogPr
               </button>
             </div>
 
-                {/* Typeform iframe */}
+                {/* Cal iframe */}
                 <div className="w-full h-[calc(100%-3.5rem)]">
               <iframe
                 src="https://cal.com/tanzilouthad"

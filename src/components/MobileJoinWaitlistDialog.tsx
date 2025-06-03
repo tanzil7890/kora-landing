@@ -42,10 +42,10 @@ export function MobileJoinWaitlistDialog({ isOpen, onClose }: MobileJoinWaitlist
               </button>
             </div>
 
-            {/* Typeform iframe */}
+            {/* Cal iframe */}
             <div className="w-full h-[calc(100%-3.5rem)]">
               <iframe
-                src="https://dhkxxavs92m.typeform.com/to/EMu0WTAE?typeform-source=outhad.com"
+                src="https://dhkxxavs92m.typeform.com/to/IUK9R3KF"
                 className="w-full h-full"
                 frameBorder="0"
               />
