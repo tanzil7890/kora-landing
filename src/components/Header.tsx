@@ -15,12 +15,12 @@ export function Header() {
 
   const menuItems = [
     /* Removed Products from standard menu items as we're handling it separately */
-    { href: "/#why-us", label: "Why Us" },
+    { href: "/#why-us", label: "Interviews" },
     /* { href: "/customer-activation", label: "Outhad Customer Activation Platform" }, */
-    { href: "/#what-we-do", label: "What We Do" },
-    { href: "/#features", label: "Features" },
+    { href: "/#what-we-do", label: "Testing" },
+    { href: "/#features", label: "Find Candidates" },
     /* { href: "/#testimonials", label: "Testimonials" }, */
-    { href: "/#pricing", label: "Pricing" },
+    { href: "/#pricing", label: "Solutions" },
   ];
 
   const productItems = [
@@ -39,7 +39,7 @@ export function Header() {
   return (
     <>
       <header className="fixed w-full z-50 bg-white/5 backdrop-blur-md border-b border-white/10">
-        <nav className="container mx-auto px-4 sm:px-8 h-[72px] flex items-center justify-between">
+        <nav className="container mx-auto px-4 sm:px-8 h-[65px] flex items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="text-2xl font-bold">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -94,7 +94,7 @@ export function Header() {
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center ml-16 space-x-12">
               {/* Products Dropdown */}
-              <div 
+              {/* <div 
                 className="relative"
                 onMouseEnter={() => setIsProductsDropdownOpen(true)}
                 onMouseLeave={() => setIsProductsDropdownOpen(false)}
@@ -128,7 +128,7 @@ export function Header() {
                     ))}
                   </div>
                 )}
-              </div>
+              </div> */}
 
               {menuItems.map((item) => (
                 <Link 
@@ -148,9 +148,9 @@ export function Header() {
               onClick={handleOpenDemo}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="hidden md:inline-flex items-center justify-center rounded-lg text-[15px] font-light bg-black hover:bg-gray-900 text-white h-10 px-6 transition-colors shadow-lg"
+              className="hidden md:inline-flex items-center justify-center rounded-lg text-[15px] font-light bg-[#f88e4c] hover:bg-gray-900 text-white h-10 px-6 transition-colors shadow-lg"
             >
-              Book a Demo
+              Start Hiring
             </motion.button>
 
             {/* Mobile Menu Button */}
@@ -240,7 +240,7 @@ export function Header() {
               whileTap={{ scale: 0.98 }}
               className="w-full inline-flex items-center justify-center rounded-lg text-[15px] font-light bg-black hover:bg-gray-900 text-white h-10 px-6 transition-colors shadow-lg"
             >
-              Book a Demo
+              Start Hiring
             </motion.button>
           </div>
         </motion.div>

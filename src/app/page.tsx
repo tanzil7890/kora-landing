@@ -14,7 +14,7 @@ import { Footer } from "@/components/Footer";
 export default function Home() {
   return (
     <div className="relative min-h-screen overflow-hidden">
-      <DottedBackground />
+      {/* <DottedBackground /> */}
       
       {/* Hero Section */}
       <section className="relative pt-40 pb-20 md:pt-48 md:pb-32">
@@ -32,7 +32,7 @@ export default function Home() {
       </section> */}
 
       {/* Animated Marquee Banner */}
-      <AnimatedMarquee />
+      {/* <AnimatedMarquee /> */}
 
       {/* Features Section */}
       <section id="why-us">
@@ -40,9 +40,9 @@ export default function Home() {
       </section>
 
       {/* Tech Features Section */}
-      <section id="what-we-do">
+      {/* <section id="what-we-do">
         <TechFeatures />
-      </section>
+      </section> */}
 
       {/* Search Features Section */}
       <section id="features">
