@@ -32,7 +32,7 @@ export function AnimatedHeroCAP() {
             <svg className="mr-2 h-4 w-4 text-gray-900" viewBox="0 0 24 24" fill="none">
               <path d="M12 6V18M12 6L7 11M12 6L17 11" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-            For our early adopters only! Constitute of E-commerce, SaaS, and Marketing.
+            For our early adopters only! HR teams, recruiters, and hiring managers.
           </div>
         </motion.div>
       </div>
@@ -49,14 +49,14 @@ export function AnimatedHeroCAP() {
           >
             {/* <Logo width={48} height={48} /> */}
             <h1 className="text-4xl sm:text-5xl lg:text-[90px] text-gray-900 tracking-[-0.04em] leading-[1.1] mb-6">
-              Do the Marketing and Sales better way with{" "}
-              <span className="text-[#8B5CF6] bg-clip-text">
-                Outhad AI
+              Revolutionize hiring with{" "}
+              <span className="text-[#f88e4c] bg-clip-text">
+                Kora AI
               </span>
               . 
             </h1>
             <p className="text-xl sm:text-lg lg:text-2xl text-gray-600 mb-8 lg:mb-10 max-w-6xl mx-auto font-light leading-relaxed">
-              Outhad AI is a Customer Activation Platform for marketing, sales, and personalization. Find insights, run campaigns, build workflows, and AI agents with all your data.
+              Kora AI is an end-to-end hiring platform powered by artificial intelligence. Find top talent, conduct smart interviews, and make data-driven hiring decisions with our advanced AI technology.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.button

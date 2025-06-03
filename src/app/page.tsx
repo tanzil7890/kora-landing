@@ -3,13 +3,16 @@ import { AnimatedFeatures } from "@/components/AnimatedFeatures";
 import { AnimatedMarquee } from "@/components/AnimatedMarquee";
 import { DottedBackground } from "@/components/DottedBackground";
 import { TechFeatures } from "@/components/TechFeatures";
-import { SearchFeatures } from "@/components/SearchFeatures";
+/* import { SearchFeatures } from "@/components/SearchFeatures"; */
+import { KoraFeatures } from "@/components/KoraFeatures";
 /* import { JobFeatures } from "@/components/JobFeatures";
 import { WebFeatures } from "@/components/WebFeatures"; */
 import { IntegrationSection } from "@/components/IntegrationSection";
 /* import { Testimonials } from "@/components/Testimonials"; */
 import { PricingSection } from "@/components/PricingSection";
 import { Footer } from "@/components/Footer";
+import { Feature2 } from "@/components/Feature2";
+import { UseCase } from "@/components/UseCase";
 
 export default function Home() {
   return (
@@ -32,7 +35,7 @@ export default function Home() {
       </section> */}
 
       {/* Animated Marquee Banner */}
-      {/* <AnimatedMarquee /> */}
+      <AnimatedMarquee />
 
       {/* Features Section */}
       <section id="why-us">
@@ -44,24 +47,34 @@ export default function Home() {
         <TechFeatures />
       </section> */}
 
+      {/* Feature 2 Section */}
+      <section id="feature-2">
+        <Feature2 />
+      </section>
+
       {/* Search Features Section */}
       <section id="features">
-        <SearchFeatures />
+        <KoraFeatures />
+      </section>
+
+      {/* Use Case Section */}
+      <section id="use-case">
+        <UseCase />
       </section>
 
       {/* Integration Section */}
-      <section id="integrations">
+      {/* <section id="integrations">
         <IntegrationSection />
-      </section>
+      </section> */}
       {/* Testimonials Section */}
       {/* <section id="testimonials">
         <Testimonials />
       </section> */}
 
       {/* pricing section */}
-      <section id="pricing">
+      {/* <section id="pricing">
         <PricingSection />
-      </section>
+      </section> */}
 
       {/* Footer Section */}
       <Footer />

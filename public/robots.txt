@@ -1,10 +1,10 @@
-# https://outhad.com/robots.txt
+# https://kora.ai/robots.txt
 # Allow all crawlers
 User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://outhad.com/sitemap.xml
+Sitemap: https://kora.ai/sitemap.xml
 
 # Optimize crawling
 Crawl-delay: 1

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    quote: "The context-aware search has transformed how our customers find products. We've seen a 30% increase in conversion rates since implementing Outhad AI.",
+    quote: "The context-aware search has transformed how our customers find products. We've seen a 30% increase in conversion rates since implementing Kora AI.",
     author: "Manas Hashvardhan Singh",
     role: "CTO of EM5",
     avatar: "/testimonials/avatar-1.png"

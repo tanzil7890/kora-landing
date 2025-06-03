@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Outhad AI - Revolutionize Search",
-  description: "Transform your online store with context-aware search, personalized shopping agents, and data-driven insights to boost conversions and customer satisfaction.",
+  title: "Kora AI - Revolutionize Hiring",
+  description: "Transform your hiring process with AI-powered interviews, intelligent candidate sourcing, and data-driven insights to reduce time-to-hire by 80%.",
 };

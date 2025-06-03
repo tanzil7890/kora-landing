@@ -440,7 +440,7 @@ export function TechFeatures() {
           <div className="flex-1">
             <div className="flex items-center justify-between mb-8 sm:mb-12 lg:mb-16">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl text-gray-900 font-light leading-tight">
-                Discover what&apos;s possible <br className="hidden sm:block" />with <span className="text-[#8B5CF6] font-medium">outhad ai</span>
+                Discover what&apos;s possible <br className="hidden sm:block" />with <span className="text-[#8B5CF6] font-medium">Kora ai</span>
               </h2>
               <button
                 onClick={() => setAutoPlay(!autoPlay)}

@@ -3,7 +3,7 @@ export default function StructuredData() {
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "Outhad AI",
+      "name": "Kora AI",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web",
       "description": "Transform your online store with context-aware search, personalized shopping agents, and data-driven insights to boost conversions and customer satisfaction.",
@@ -31,28 +31,28 @@ export default function StructuredData() {
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Outhad AI",
-      "url": "https://outhad.com",
-      "logo": "https://outhad.com/logo.svg",
+      "name": "Kora AI",
+      "url": "https://Kora.com",
+      "logo": "https://Kora.com/logo.svg",
       "sameAs": [
-        "https://twitter.com/outhadai",
-        "https://linkedin.com/company/outhadai"
+        "https://twitter.com/Koraai",
+        "https://linkedin.com/company/Koraai"
       ],
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "sales",
-        "email": "sales@outhad.com",
+        "email": "sales@Kora.com",
         "availableLanguage": ["English"]
       }
     },
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "Outhad AI",
-      "url": "https://outhad.com",
+      "name": "Kora AI",
+      "url": "https://Kora.com",
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://outhad.com/search?q={search_term_string}",
+        "target": "https://Kora.com/search?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     }

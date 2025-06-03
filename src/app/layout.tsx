@@ -10,32 +10,32 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://outhad.com'),
+  metadataBase: new URL('https://kora.ai'),
   title: {
-    default: "Outhad AI - Revolutionize E-commerce Search with AI-Powered Solutions",
-    template: "%s | Outhad AI"
+    default: "Kora AI - Revolutionize Hiring with AI-Powered Interview Platform",
+    template: "%s | Kora AI"
   },
-  description: "Transform your online store with Outhad AI's context-aware search (98% accuracy), personalized shopping agents, and data-driven insights. Boost conversions by 4.2% and enhance customer satisfaction with our advanced AI technology.",
+  description: "Transform your hiring process with Kora AI's intelligent interviews, candidate sourcing across 200+ platforms, and behavioral assessments. Reduce time-to-hire by 80% with our advanced AI technology.",
   keywords: [
-    "AI search engine",
-    "e-commerce search solution",
-    "personalized shopping",
-    "context-aware search",
-    "AI shopping assistant",
-    "conversion optimization",
-    "e-commerce analytics",
-    "smart product recommendations",
-    "retail search technology",
-    "AI-powered search",
-    "semantic search",
-    "natural language search",
-    "product discovery platform",
-    "intelligent search solution",
-    "real-time analytics"
+    "AI hiring platform",
+    "AI interviews",
+    "candidate sourcing",
+    "hiring intelligence",
+    "behavioral assessments",
+    "remote hiring",
+    "AI recruiting",
+    "smart hiring platform",
+    "recruitment technology",
+    "AI-powered hiring",
+    "talent acquisition",
+    "hiring automation",
+    "interview platform",
+    "candidate screening",
+    "global hiring platform"
   ],
-  authors: [{ name: "Outhad AI", url: "https://outhad.com" }],
-  creator: "Outhad AI Team",
-  publisher: "Outhad AI",
+  authors: [{ name: "Kora AI", url: "https://kora.ai" }],
+  creator: "Kora AI Team",
+  publisher: "Kora AI",
   formatDetection: {
     email: false,
     address: false,
@@ -48,34 +48,34 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Outhad AI - Transform Your E-commerce Search Experience",
-    description: "Boost conversions by 4.2% with AI-powered context-aware search, personalized shopping agents, and real-time analytics. Join leading brands using Outhad AI.",
-    url: "https://outhad.com",
-    siteName: "Outhad AI",
+    title: "Kora AI - Transform Your Hiring Process with AI",
+    description: "Reduce time-to-hire by 80% with AI-powered interviews, intelligent candidate sourcing, and behavioral assessments. Join leading companies using Kora AI.",
+    url: "https://kora.ai",
+    siteName: "Kora AI",
     images: [
       {
-        url: "/images/outhad-home.png",
+        url: "/images/kora-home.png",
         width: 1200,
         height: 630,
-        alt: "Outhad AI - Revolutionizing E-commerce Search with AI",
+        alt: "Kora AI - Revolutionizing Hiring with AI",
       },
       {
-        url: "/images/context-aware-search.png",
+        url: "/images/kora-interviews.png",
         width: 1200,
         height: 630,
-        alt: "Context-Aware Search with 98% Accuracy",
+        alt: "AI-Powered Interview Platform",
       },
       {
-        url: "/images/personlized-shoping-agent.png",
+        url: "/images/kora-candidate-sourcing.png",
         width: 1200,
         height: 630,
-        alt: "AI-Powered Personal Shopping Assistant",
+        alt: "Candidate Sourcing Across 200+ Platforms",
       },
       {
-        url: "/images/data-driven-insights-boost-conversion.png",
+        url: "/images/kora-hiring-analytics.png",
         width: 1200,
         height: 630,
-        alt: "Data-Driven Insights for E-commerce Growth",
+        alt: "Hiring Analytics and Insights",
       }
     ],
     locale: "en_US",
@@ -83,11 +83,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Outhad AI - Next-Gen E-commerce Search Solution",
-    description: "Elevate your online store with AI-powered search technology. 98% search accuracy, 4.2% conversion boost, and personalized shopping experiences.",
-    site: "@outhadai",
-    creator: "@outhadai",
-    images: ["/images/outhad-home.png"],
+    title: "Kora AI - Next-Gen Hiring Platform",
+    description: "Revolutionize your hiring process with AI-powered interviews, candidate sourcing, and behavioral assessments. 80% reduction in time-to-hire.",
+    site: "@koraai",
+    creator: "@koraai",
+    images: ["/images/kora-home.png"],
   },
   robots: {
     index: true,
@@ -122,11 +122,11 @@ export default function RootLayout({
     <html lang="en" className="dark" suppressHydrationWarning>
       <head>
         <StructuredData />
-        <link rel="canonical" href="https://outhad.com" />
-        <meta name="theme-color" content="#6d28d9" />
+        <link rel="canonical" href="https://kora.ai" />
+        <meta name="theme-color" content="#f88e4c" />
         <link rel="manifest" href="/manifest.json" />
-        <link rel="icon" href="/outhad-logo.png" />
-        <link rel="apple-touch-icon" href="/outhad-logo.png" />
+        <link rel="icon" href="/KoraAnimated.svg" />
+        <link rel="apple-touch-icon" href="/KoraAnimated.svg" />
       </head>
       <body className={`${spaceGrotesk.className} gradient-bg text-white min-h-screen antialiased`} suppressHydrationWarning>
         <ClientLayout>{children}</ClientLayout>
