@@ -1,15 +1,11 @@
 import { AnimatedHero } from "@/components/AnimatedHero";
 import { AnimatedFeatures } from "@/components/AnimatedFeatures";
 import { AnimatedMarquee } from "@/components/AnimatedMarquee";
-import { DottedBackground } from "@/components/DottedBackground";
-import { TechFeatures } from "@/components/TechFeatures";
 /* import { SearchFeatures } from "@/components/SearchFeatures"; */
 import { KoraFeatures } from "@/components/KoraFeatures";
 /* import { JobFeatures } from "@/components/JobFeatures";
 import { WebFeatures } from "@/components/WebFeatures"; */
-import { IntegrationSection } from "@/components/IntegrationSection";
 /* import { Testimonials } from "@/components/Testimonials"; */
-import { PricingSection } from "@/components/PricingSection";
 import { Footer } from "@/components/Footer";
 import { Feature2 } from "@/components/Feature2";
 import { UseCase } from "@/components/UseCase";

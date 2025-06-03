@@ -3,17 +3,17 @@
 import { motion } from "framer-motion";
 import { RightContentDisplay3 } from "./RightContentDisplay3";
 import { BookDemoDialog } from "./BookDemoDialog";
-import { MobileBookDemoDialog } from "./MobileBookDemoDialog";
+// import { MobileBookDemoDialog } from "./MobileBookDemoDialog";
 import { JoinWaitlistDialog } from "./JoinWaitlistDialog";
-import { MobileJoinWaitlistDialog } from "./MobileJoinWaitlistDialog";
+// import { MobileJoinWaitlistDialog } from "./MobileJoinWaitlistDialog";
 import { useState } from "react";
-import { useDeviceType } from "@/hooks/useDeviceType";
+// import { useDeviceType } from "@/hooks/useDeviceType";
 /* import Logo from "./Logo"; */
 
 export function AnimatedHero() {
   const [isBookDemoOpen, setIsBookDemoOpen] = useState(false);
   const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
-  const deviceType = useDeviceType();
+  // const deviceType = useDeviceType();
 
   const handleDemoClick = () => {
     setIsBookDemoOpen(true);
@@ -90,7 +90,15 @@ export function AnimatedHero() {
       </div>
 
       {/* Dialogs */}
-      {deviceType === 'mobile' ? (
+      <BookDemoDialog 
+        isOpen={isBookDemoOpen}
+        onClose={() => setIsBookDemoOpen(false)}
+      />
+      <JoinWaitlistDialog 
+        isOpen={isWaitlistOpen}
+        onClose={() => setIsWaitlistOpen(false)}
+      />
+      {/* {deviceType === 'mobile' ? (
         <>
           <MobileBookDemoDialog 
             isOpen={isBookDemoOpen}
@@ -112,7 +120,7 @@ export function AnimatedHero() {
             onClose={() => setIsWaitlistOpen(false)}
           />
         </>
-      )}
+      )} */}
     </>
   );
 }
