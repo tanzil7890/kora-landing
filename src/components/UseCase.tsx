@@ -23,7 +23,7 @@ export function UseCase() {
                   <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l7-3 7 3z" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-              <span className="text-[#101826]">Trusted by companies across all industries</span>
+              <span className="text-[#101826]">Use Cases</span>
             </div>
           </motion.div>
         </div>
