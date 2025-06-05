@@ -45,7 +45,7 @@ export function MobileBookDemoDialog({ isOpen, onClose }: MobileBookDemoDialogPr
                 {/* Cal iframe */}
                 <div className="w-full h-[calc(100%-3.5rem)]">
               <iframe
-                src="https://cal.com/tanzilouthad"
+                src="https://cal.com/hey-kora"
                 className="w-full h-full"
                 frameBorder="0"
               />

@@ -45,7 +45,7 @@ export function BookDemoDialog({ isOpen, onClose }: BookDemoDialogProps) {
             {/* Calendar iframe */}
             <div className="w-full h-full pt-16">
               <iframe
-                src="https://cal.com/tanzilouthad"
+                src="https://cal.com/hey-kora"
                 className="w-full h-full"
                 frameBorder="0"
               />

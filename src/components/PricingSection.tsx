@@ -168,7 +168,7 @@ export function PricingSection() {
 
               {!plan.isDirectPurchase ? (
                 <a
-                  href="https://cal.com/tanzilouthad"
+                  href="https://cal.com/hey-kora"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`block w-full py-3 px-4 rounded-xl font-medium transition-transform hover:scale-105 text-center ${plan.buttonStyle}`}
@@ -203,7 +203,7 @@ export function PricingSection() {
 
               <div className="mt-6">
                 <a target="_blank"
-                  href="https://cal.com/tanzilouthad" 
+                  href="https://cal.com/hey-kora" 
                   className={`text-sm ${plan.isPopular ? 'text-white/80' : 'text-gray-500'} hover:underline`}
                 >
                   Learn more
