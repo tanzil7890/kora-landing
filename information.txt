@@ -1,0 +1,674 @@
+Kora AI
+“Continuous AML RegOps, not quarterly fire drills.”
+
+About
+Kora AI is an autonomous RegOps layer for banks and fintechs with serious BSA/AML obligations.
+Instead of hiring more analysts and spinning up new point solutions every time regulators tighten the rules, Kora AI connects to your existing stack (core banking, AML platform, case management, data warehouse, payments) and continuously:
+Reconciles key AML data flows
+Runs controls as executable checks
+Collects and normalizes evidence
+Maintains a living, audit-ready “evidence graph”
+Surfaces gaps and issues ranked by regulatory and dollar impact
+
+
+We don’t replace your AML/sanctions system. We sit on top and next to it as an autonomous “compliance engineer” that does the boring, high-volume work your team doesn’t have time for.
+
+Product Overview
+One-liner:
+Kora AI is a continuous compliance agent for BSA/AML — it turns fragmented systems and spreadsheets into a single, real-time, audit-ready view of your AML program, with an AI worker that runs checks and collects evidence automatically.
+Core ideas:
+Agent, not just dashboard.
+ The system doesn’t just visualize; it acts. It writes and executes checks as code in a secure sandbox (CodeAct style) and pushes results back into your evidence graph.
+Continuous, not quarterly.
+ Compliance is moving from “point-in-time audits” to continuous controls monitoring (CCM). Big firms and consultancies are already pushing CCM as best practice to replace sample-based testing with 24/7 monitoring of full populations.Deloitte+2skan.ai+2
+On top of your stack.
+ Kora AI integrates with core banking, AML systems (Actimize/ComplyAdvantage/etc.), case management, KYC vendors, and warehouses — instead of trying to rip and replace any of them.
+
+
+
+What We Do
+At a high level, Kora AI:
+Connects to your financial crime ecosystem (core, AML, KYC, payments, DW).
+Builds a live model of your AML program: controls, data flows, obligations, systems.
+Runs continuous checks (as code) over your data to verify controls are working.
+Auto-collects evidence (logs, samples, metrics, configs) into a normalized evidence graph.
+Prioritizes issues by regulatory risk and financial exposure.
+Prepares audit/exam packs at any time with one click.
+
+
+Think of it as hiring a tireless “AML DevOps engineer” that keeps your program healthy between audits and enforcement actions.
+
+Features (and the problems they solve)
+1. Continuous Evidence Graph
+What it is:
+ A graph that links obligations → policies → controls → systems → checks → evidence → exceptions in real time.
+Problems it solves:
+Today, evidence for exams is scattered across spreadsheets, tickets, emails, shared drives, and screenshots.
+When regulators ask “Prove control X was operating effectively over the last 12 months,” teams scramble for weeks.
+With financial crime compliance costs in the US & Canada alone estimated at $61B per year and rising for 99% of institutions, this manual evidence work is a major driver of cost. LexisNexis Risk Solutions
+What Kora does:
+Continuously links checks and artefacts to specific obligations and controls.
+Makes every control queryable: “Show me last 90 days of evidence for Transaction Monitoring Scenario 12 in US retail bank”.
+
+
+2. Autonomous Control Checks (Code-as-Control)
+What it is:
+ An agent that writes and runs executable checks (SQL/Python) to validate AML controls across systems — inspired by the CodeAct pattern where LLMs generate executable code as actions, yielding better performance on tool-use tasks than simple text/JSON.Lalr+1
+Problems it solves:
+Most banks rely on periodic, sample-based testing of controls; continuous coverage is rare and expensive.Deloitte+2skan.ai+2
+There is often no automated way to verify that rules are firing, thresholds make sense, and coverage hasn’t silently degraded after system changes or data quality issues.
+What Kora does:
+Encodes controls as machine-readable templates (e.g. “Every transaction above $X from region Y must be screened and logged in System Z within 24 hours”).
+Agent continuously generates and runs checks to verify those conditions in your data.
+When checks fail, it opens an exception with context, data samples, and suggested remediation.
+
+3. Cross-System AML Reconciliation
+What it is:
+ Automated reconciliation across core banking, AML, case management, KYC, and data warehouse to ensure your AML program is complete and consistent.
+Problems it solves:
+Global financial crime compliance costs are estimated in the $200B+ range annually, with a heavy share spent on manual processes and reconciliation.Flagright+2Lalr+2
+Mid-sized banks especially see compliance expenses consuming ~5–10% of noninterest expense, with smaller banks often at the high end of that range, indicating significant operational drag.Community Banking+2CSBS+2
+No one system proves that all transactions, alerts, and customers are consistently represented across all relevant systems.
+What Kora does:
+Reconciles transaction counts and amounts between core, AML, and data warehouse.
+Checks that all high-risk customers exist and are scored consistently across KYC, AML, and CRM.
+Validates that all alerts have case outcomes and, where required, regulatory reports (e.g., SARs) attached.
+
+
+4. Regulatory Runbooks & Live Exam Packs
+What it is:
+ Codified, automated runbooks for recurring regulatory tasks (e.g., BSA/AML exams, look-back requests, model validation).
+Problems it solves:
+Every exam or look-back currently triggers ad-hoc “all hands” fire drills, distracting senior staff and frontline teams for weeks.
+Regulators increasingly expect banks to demonstrate ongoing effectiveness of AML controls, not just pass a yearly audit.Mayer Brown+1
+What Kora does:
+Encodes exam workflows as plans the agent can execute:
+ “Step 1: Collect last 24 months of TM scenario metrics; Step 2: sample alerts; Step 3: gather evidence of governance; Step 4: assemble report.”
+Keeps an exam-ready pack updated so that at any time you can export current evidence and control metrics.
+
+
+5. Risk-Weighted Exception Prioritization
+What it is:
+ A prioritization engine that scores issues by regulatory risk + dollar exposure + operational effort.
+Problems it solves:
+Compliance teams are overwhelmed with alerts, control failures, QA issues, and exam findings; they can’t do everything.
+But not all issues are equal: missing KYC on a high-risk correspondent bank is not the same as a minor logging bug.
+
+
+What Kora does:
+Scores exceptions using factors like:
+Regulatory link (BSA, OFAC, CFPB consent order, prior MRAs)
+Volume and value of impacted transactions
+Historical enforcement patterns (e.g., focus on AML program failures)Reuters+3FinCEN.gov+3orx.org+3
+
+
+Produces a simple queue: “Top 10 issues to fix this week to materially reduce regulatory risk.”
+
+
+Why It Matters
+Massive, growing spend
+LexisNexis estimates that financial crime compliance costs in the US and Canada alone have reached $61B/year, with 99% of institutions reporting increased costs and most prioritizing cost reduction.LexisNexis Risk Solutions+2InvestmentNews+2
+Earlier global estimates put financial crime compliance spend around $213.9B across surveyed markets.Lalr
+More recent industry commentary cites $200B+ globally for financial crime compliance across banks and fintechs.Flagright+1
+
+
+Catastrophic downside when you get it wrong
+TD Bank’s US operations were hit with over $3B in AML-related penalties and forfeiture, a four-year independent monitorship, and a multi-year remediation program, after failures allowed networks to move hundreds of millions of dollars in illicit funds.Investopedia+5FinCEN.gov+5orx.org+5
+
+
+Structural disadvantage for mid-sized institutions
+Compliance expenses can be ~10% of noninterest expense for smaller banks, falling to about 5% for institutions in the $1–10B asset range, showing strong diseconomies of scale.Community Banking+2CSBS+2
+
+
+Translation:
+ Financial institutions are spending eye-watering amounts, especially on labor, yet still getting hit with record fines and monitors because they lack continuous, data-driven, evidence-backed visibility into their AML program.
+Kora AI makes continuous AML compliance operationally and economically viable.
+
+How It Fits (Stack Positioning)
+Kora AI is not:
+A transaction monitoring engine
+A sanctions screening tool
+A case management system
+
+
+Kora AI is:
+A RegOps & CCM layer on top of your existing AML/KYC stack
+An autonomous agent that:
+Reads from core, AML, KYC, payments, DW
+Runs compliance checks and reconciliations as code
+Stores evidence and exceptions in an AML-specific graph
+
+
+A bridge between the world of GRC/CCM and financial crime specifics, tuned to BSA/AML obligations rather than generic frameworks.Cloud Security Alliance+3Deloitte+3RegScale+3
+
+
+Typical data sources:
+Core banking / ledger
+AML transaction monitoring (Actimize, SAS, ComplyAdvantage, etc.)
+Sanctions/KYC vendors
+Case & investigation tools
+Data warehouse / lake
+Policy and procedure repositories (for mapping to controls)
+
+
+
+The Result
+For a mid-sized US/Canadian bank or fintech, successfully deploying Kora AI should mean:
+50–80% less manual time spent assembling evidence for BSA/AML exams and audits.
+Continuous awareness of control health — no more “we’ll find out next exam if we’re in trouble.”
+Fewer and better escalations to senior management and the board, based on data rather than anecdotes.
+Reduced probability and severity of enforcement actions due to program failures (especially the “you didn’t have an adequate AML program” type findings, which have led to multi-billion penalties).Reuters+4FinCEN.gov+4orx.org+4
+Over time, lower total cost of compliance by automating the rote work and allowing scarce AML experts to focus on investigation and strategic improvements.
+
+
+
+Hair-on-Fire Problem Statement
+Financial institutions are spending tens of billions per year on AML compliance, yet still face multi-billion dollar fines and multi-year monitorships because they lack a continuous, unified way to prove that their AML programs are working right now.
+Evidence:
+Cost explosion:
+Total financial crime compliance costs in the US & Canada reached $61B/year in 2024, with 99% of financial institutions reporting rising costs and most prioritizing cost reduction.LexisNexis Risk Solutions+2InvestmentNews+2
+Global studies have estimated $213.9B in annual financial crime compliance spend across surveyed markets, and more recent commentary pegs global costs at over $200B per year.Lalr+2Flagright+2
+
+
+Catastrophic downside:
+TD Bank’s 2024 settlements illustrate the worst-case scenario: over $3B in AML-related penalties and forfeiture, a four-year monitorship, an asset cap, and large remediation budgets, following failures that left trillions in transactions insufficiently monitored and enabled networks to move over $600M in illicit funds.Reuters+6FinCEN.gov+6orx.org+6
+
+
+Structural pain for mid-sized institutions:
+Compliance expense as a share of noninterest expense is almost double for smaller banks compared to those with $1–10B in assets (around 9.8% vs. 4.9%), showing that they pay a disproportionate cost to meet the same or similar regulatory expectations.Community Banking+2CSBS+2
+
+
+Summarized pain:
+“We spend more every year on AML compliance.”
+“We still don’t have a live, single source of truth for our program.”
+“We only find out how bad things are when the regulator or internal audit shows up.”
+
+
+Kora AI exists to turn that hair-on-fire reality into a continuously monitored, auditable, and defensible AML posture.
+
+Ideal Customer Profile (ICP)
+Primary ICP (wedge):
+Type: Mid-sized US & Canadian banks, credit unions, and digital-first financial institutions (e.g., neobanks, payment processors)
+Assets: Roughly $1–$100B in assets or equivalent scale
+Regulatory obligations:
+Subject to BSA/AML, OFAC, and related regulations
+Under recurring exam pressure (OCC, FDIC, FRB, OSFI, provincial regulators)
+Stack profile:
+Multiple systems for AML, payments, KYC, case management
+Data warehouse or lake in place or in-progress
+Org symptoms:
+AML/compliance teams chronically overworked
+Heavy use of spreadsheets and manual evidence collection
+History of MRAs/MRIAs, consent orders, or exam findings on BSA/AML
+Second-phase extensions: larger banks, insurers with heavy financial crime obligations, and high-growth fintechs scaling into bank-like regulatory scrutiny.
+
+Value Proposition
+For our ICP, Kora AI delivers:
+Risk reduction:
+Continuous visibility into control health, with prioritized issues to fix before the regulator finds them.
+Cost optimization:
+Reduced manual labor on recurring evidence and reconciliation work; potential to flatten or reduce compliance headcount growth even as regulations tighten.
+Time-to-answer:
+“Are we compliant right now?” shifts from months-long analysis to minutes.
+Audit & exam readiness:
+Live exam packs, mapped to controls and supported by evidence, at any time.
+
+
+You can summarize it as:
+“Kora AI converts rising AML compliance spend into a stable, data-driven operating motion, and cuts the tail risk of catastrophic program failures.”
+
+Pain Signals for Discovery Calls
+Concrete things a good prospect will say:
+“Every exam is a fire drill — we spend weeks chasing evidence across teams.”
+“We’ve got several AML tools, but no single picture of whether the program is working end to end.”
+“We keep hiring more analysts, but the backlog of reconciliations, QA, and model validation never goes away.”
+“Regulators are pushing us toward continuous monitoring, but our tools and processes are still yearly/quarterly.”Deloitte+2skan.ai+2
+“We’re worried about becoming the next TD-type headline if a program failure slips through.”Reuters+5FinCEN.gov+5orx.org+5
+
+
+When we hear 2–3 of these in one conversation, we’re in the sweet spot.
+Why It Matters Now
+Regulatory pressure is increasing.
+North American regulators are openly revisiting AML compliance costs and effectiveness, referencing the LexisNexis $61B estimate as context.Mayer Brown+2LexisNexis Risk Solutions+2
+Canada is proposing significantly stronger AML powers and penalties after the TD case, ahead of FATF evaluations.Reuters
+
+
+Costs keep going up; budgets don’t.
+Financial crime compliance costs are rising for nearly all institutions; many report that cutting these costs is a top priority in the next 12 months.Mayer Brown+3LexisNexis Risk Solutions+3InvestmentNews+3
+
+
+Continuous Controls Monitoring is becoming the standard.
+CCM is now a mainstream concept in risk and compliance, especially in financial services — moving away from sample-based testing to full-population, real-time monitoring.Cloud Security Alliance+3Deloitte+3Pathlock+3
+Agentic AI is finally practical.
+The combination of strong LLMs, code-execution patterns (like CodeAct), and containerized compute makes it feasible to have an agent that runs real checks at scale, not just chats.Lalr+1
+
+
+All the pieces for Kora AI — regulation, economics, and technology — are converging now, not five years from now.
+
+Detail Table
+You can keep this as an internal one-page summary:
+Section
+Detail
+Company Name
+Kora AI – Continuous AML RegOps layer
+Hair-on-Fire Problem
+FIs spend $61B/year in US & Canada and $200B+ globally on financial crime compliance, yet still face multi-billion dollar AML penalties and monitorships because they lack a continuous, unified way to prove their AML programs are effective right now.Department of Justice+6LexisNexis Risk Solutions+6InvestmentNews+
+ICP
+Mid-sized US & Canadian banks, credit unions, and digital-first FIs ($1–$100B assets) under BSA/AML, with multiple AML tools and heavy manual exam/evidence processes; disproportionate compliance cost as % of noninterest expense.Community Banking+2CSBS+2
+Product Overview
+Autonomous RegOps agent that connects to core, AML, KYC, case tools, and DW to run continuous checks, collect evidence, maintain an AML evidence graph, and surface prioritized issues for remediation.
+Key Features
+(1) Continuous Evidence Graph; (2) Autonomous Control Checks; (3) Cross-System AML Reconciliation; (4) Regulatory Runbooks & Exam Packs; (5) Risk-Weighted Exception Prioritization.
+Primary Outcomes
+50–80% reduction in manual evidence/reconciliation effort; real-time control health visibility; fewer surprise findings; lower probability and severity of enforcement actions; more predictable compliance spend.
+Tech Differentiation
+Uses an LLM-based agent generating executable checks as code (CodeAct paradigm) in a secure sandbox, integrated with CCM concepts, specialized for BSA/AML.Lalr+3Deloitte+3skan.ai+3
+Why Now
+Rising AML costs, record enforcement actions (e.g., TD Bank), regulators pushing toward continuous monitoring, and mature agentic AI + containerization make continuous AML RegOps feasible and urgent.Cloud Security Alliance+8LexisNexis Risk Solutions+8InvestmentNews+8
+Positioning vs Others
+Not a new TM/sanctions engine; a RegOps/CCM layer on top of existing AML stack, focused on continuous controls, reconciliation, and evidence automation, rather than alert generation.
+
+
+
+
+
+Source
+
+
+Deloitte
+Continuous Controls Monitoring | Deloitte | Risk
+Continuous control monitoring (CCM) is a technology-based solution to continuously monitor processes, transitioning from sample-based testing to economical ...
+
+
+LexisNexis Risk Solutions
+Study Reveals Annual Cost of Financial Crime Compliance ...
+Feb 21, 2024 — The total cost of financial crime compliance in the U.S. and Canada has reached U.S.$61 billion. Mid and large-sized financial institutions ( ...
+Lalr
+true cost of financial crime compliance study
+June 3, 2021 — The projected total cost of financial crime compliance across all financial institutions in the 2020 study markets is $213.9B. This reflects sizeable year-over ...
+
+
+Flagright
+Overcoming the Hidden Costs of AML Compliance
+July 3, 2025 — Jun 30, 2025 — Globally, fintechs and banks spend an estimated $206 billion per year on financial crime compliance. ... Why Flagright Is the Best AML Compliance ...
+
+
+Community Banking
+Compliance Costs and Economies of Scale and ...
+April 18, 2018 — For banks with the highest rating, mean compliance expenses as a percentage of noninterest expense averaged. 9.8 percent for banks with assets under $100 ...
+
+
+Mayer Brown
+FinCEN Issues Request for Information on AML ...
+October 6, 2025 — Oct 7, 2025 — LexisNexis, Study Reveals Annual Cost of Financial Crime Compliance Totals $61 Billion in the United States and Canada (Feb. 21, 2024). 4 ...
+
+
+FinCEN.gov
+FinCEN Assesses Record $1.3 Billion Penalty against TD ...
+Oct 10, 2024 — FinCEN's $1.3 billion settlement is the largest penalty against a depository institution in US Treasury and FinCEN history.
+
+
+Reuters
+Canada proposes more powers for anti money-laundering regulator amid increasing scrutiny
+December 17, 2024 — Canada has proposed new measures to strengthen its anti-money laundering regulator, the Financial Transactions and Reports Analysis Centre of Canada (FINTRAC), by increasing penalties and enhancing coordination with other federal agencies. This comes in response to a recent incident involving TD Bank, which was fined over $3.09 billion in the United States for failing to comply with anti-money laundering regulations. The proposed changes to the Proceeds of Crime (Money Laundering) and Terrorist Financing Act include a 40-fold increase in penalties, criminal charges for providing false or incomplete information, and a tenfold increase in fines for all criminal offenses. These measures aim to improve Canada's compliance ahead of an evaluation by the Financial Action Task Force (FATF) in 2025-2026. The FATF previously identified areas needing improvement in Canada's anti-money laundering framework during its 2016 review. The proposal emphasizes encouraging compliance rather than imposing large penalties and includes a penalty limit for individuals and companies.
+
+
+fourthline.com
+How Much Do Banks Spend on Compliance? A Look at ...
+Jul 11, 2025 — Mid-sized banks face different cost pressures. Banks with between $1 and $10 billion in assets report compliance costs of 2.9% of non-interest ...
+
+
+lexisnexis.com
+Study Reveals Annual Cost of Financial Crime Compliance ...
+Mar 6, 2024 — The total cost of financial crime compliance in EMEA has reached $85 billion. Financial institutions (FIs) are seeking ways to reduce costs while complying ...
+
+
+scytale.ai
+The 5 Benefits of Continuous Controls Monitoring - Scytale
+Jan 2, 2024 — CCM is a crucial aspect of Governance, Risk, and Compliance (GRC), helping firms improve their overall compliance and enterprise risk and controls management.
+
+
+justice.gov
+Criminal Division | United States of America v. TD Bank, N.A.
+Oct 29, 2024 — As part of its plea agreement, TD Bank will pay a combined $1.8 billion in penalties, enhance and remediate its AML compliance program, and ...
+
+
+safepaas.com
+The benefits of Continuous Controls Monitoring
+This is achieved through the continuous monitoring and auditing of the controls in applications to eliminate surprises, reduce compliance costs, improve ...
+
+
+csbs.org
+Do Banking Regulations Disproportionately Impact Smaller ...
+Jul 29, 2025 — The null hypothesis (H0) is that there is no difference in the ratio of compliance costs to total operating expenses for the smallest bank ...
+
+
+csbs.org
+Too Small to Scale: What 10 Years of Data Say About ... - CSBS
+Nov 13, 2025 — Accounting and auditing expenses devoted to compliance ran 5 to 17 percentage points higher (see Chart 3).
+orx.org
+TD Bank fined for money laundering and AML failures
+TD Bank fined USD 3.09 billion by US regulators for money laundering and AML failures. On 10 October 2024, four US regulators announced that Toronto-Dominion ( ...
+
+
+bradley.com
+$3B TD Bank AML Settlement Is A Wake-Up Call For All ...
+Nov 21, 2024 — TD Bank pled guilty to conspiracy to commit money laundering and agreed to pay over $1.8 billion in penalties to resolve the US Department of Justice's ...
+
+
+cloudsecurityalliance.org
+What to Know About Continuous Controls Monitoring | CSA
+Aug 21, 2024 — Benefits of continuous controls monitoring · Increased efficiency of compliance and audit processes: · Cost reduction: · Better strategic and ...
+
+
+regscale.com
+Six Key Use Cases for Continuous Controls Monitoring
+Jul 22, 2024 — Continuous monitoring ensures ongoing vigilance, yielding both cost savings and enhanced compliance accuracy.
+
+
+regscale.com
+What Is Continuous Controls Monitoring for Compliance?
+Continuous controls monitoring (CCM) speeds up audits, reduces costs, and enhances compliance for financial and security controls.
+
+
+ascentregtech.com
+The Not So Hidden Costs of Compliance
+Mar 27, 2025 — In 2016, banks spent 9.6% of their IT budget on compliance duties; in 2023, they spent 13.4%. Financial services research firm Model Office, in ...
+
+
+quantexa.com
+Anti Money Laundering (AML) - Banking & Finance
+Apr 22, 2025 — 76% of firms with between $60 billion and $100 billion AUM spend over $5 million on AML compliance annually. 57% of firms with between $1 ...
+
+
+tookitaki.com
+How Smart AML Software Helped Banks Slash ...
+The total global cost of financial crime compliance has reached a staggering $275.13 billion annually, creating significant operational challenges for banks and ...
+
+
+investmentnews.com
+Financial crime compliance costs reach $61B for ...
+Feb 22, 2024 — The total cost of financial crime compliance in the US and Canada has reached $61 billion. Rising costs are in part due to greater regulatory burden and ...
+
+
+financialservicesperspectives.com
+TD Bank's Historic $3.1B Money Laundering Settlement a ...
+Oct 16, 2024 — On October 10, 2024, Attorney General Merrick Garland announced that TD Bank agreed to pay over $1.8 billion in penalties to resolve the ...
+
+
+alessa.com
+The Benefits of Continuous Controls Monitoring - Alessa
+Jan 6, 2025 — Real-Time Risk Detection and Mitigation · Enhanced Compliance with Regulatory Standards · Improved Operational Efficiency · Strengthened Financial ...
+
+
+int-comp.org
+The high price of negligence: Inside TD Bank's record fine
+Feb 10, 2025 — TDBNA's historic $3 billion money laundering penalty stands as a clear example of the high cost of non-compliance. On 10 October 2024, the DOJ ...
+
+
+pathlock.com
+Unlocking Efficiency: The Power of Continuous Controls ...
+Apr 3, 2024 — Providing immediate access to evidence of the organization's ability to mitigate risk, protect valuable assets, and meet legal obligations.
+
+
+reuters.com
+TD Bank appoints compliance monitor after $3 billion US ...
+Feb 27, 2025 — Exclusive: TD Bank appoints compliance monitor after $3 billion US penalty for money laundering | Reuters.
+
+
+thomsonreuters.com
+Cost of Compliance for Banks with New CDD Rule
+FinCEN predicts that the CDD Rule will cost banks and their customers between $700 million and $1.5 billion over the next decade.
+
+
+aba.com
+New study details costs, drivers of financial crime compliance
+Oct 13, 2022 — The cost of financial crime compliance in North America for 2022 is estimated at $56.7 billion, up 13.6% from 2021, according to a new study from LexisNexis ...
+
+
+aba.com
+TD Bank agrees to pay $3.1 billion to resolve AML allegations
+Nov 1, 2024 — Under the agreements, TD Bank will pay DOJ a criminal penalty of $1.43 billion and a forfeiture of $452.4 million. The bank will also pay a ...
+
+
+stlouisfed.org
+Scale Matters: Community Banks and Compliance Costs
+by D Dahl — For banks with assets of $1 billion to $10 billion, total compliance costs averaged $1.8 million, or 2.9 percent of their noninterest expenses.
+hexanika.com
+Regulatory Impact on Small and Midsize Banks
+Approximately 90% of respondents to the study “How are small banks faring under Dodd-Frank” reported an increase in compliance costs, with a whopping 82.9% ...
+
+
+lucinity.com
+The Real Cost of Anti-Money Laundering Compliance
+Mar 13, 2025 — Anti-money laundering (AML) compliance costs continue to rise as global AML system spending is projected to reach $51.7 billion by 2028.
+
+
+lucinity.com
+Cost-Effective Compliance: AML Case Management Cuts ...
+Sep 9, 2024 — In 2023 alone, financial institutions across North America spent $65 billion, South America $15 billion, EMEA $85 billion, and APAC $45 billion ...
+
+
+finintegrity.org
+A $3 Billion Mistake
+Oct 22, 2024 — TD Bank's $3B AML fine exposed $18T in unmonitored transactions. Discover what went wrong and lessons for other financial institutions.
+
+
+fincrimecentral.com
+BIS says Transactional Data Loopholes Cost Banks ...
+Industry research and BIS estimates put global losses to data-driven financial crime at more than $60 billion in 2024 alone, with the majority tied to money ...
+
+
+
+
+skan.ai
+What Is Continuous Controls Monitoring? A Simple Guide
+Apr 8, 2025 — Continuous controls monitoring helps spot unusual patterns that might signal an attack or breach. Regulations multiply each year. From GDPR to ...
+consumerfinance.gov
+Understanding the Effects of Certain Deposit Regulations on ...
+regulation – the operational cost of compliance at financial institutions. ... We compared each function's share of compliance costs across the seven case study ...
+
+
+federalreserve.gov
+Federal Reserve Board fines Toronto-Dominion Bank ...
+Oct 10, 2024 — October 10, 2024. Federal Reserve Board fines Toronto-Dominion Bank $123.5 million for violations related to anti-money laundering laws. For ...
+
+
+sraconsults.com
+Are Banks Spending Too Much on BSA/AML Compliance?
+According to a study conducted by SRA Consulting, close to 50% of all risk management spending by mid-sized US banks is on BSA/AML compliance.
+occ.gov
+Civil Money Penalty - TD Bank, N.A. and ...
+Oct 9, 2024 — (7). The Bank recklessly engaged in unsafe or unsound practices related to the Bank's. BSA/AML Program. (8). The Bank's violations and ...
+
+
+secureframe.com
+The Benefits of Continuous Control Monitoring & How You ...
+Aug 29, 2024 — CCM helps organizations maintain ongoing compliance by continuously monitoring and assessing controls that are critical to meeting regulatory ...
+360factors.com
+Costs of Compliance for Small to Mid-Size Banks
+This guide is focused on solutions for small to mid-sized banks looking to reign in the costs of compliance. It talks about the increasing compliance budgets ...
+
+
+kpmg.com
+Combating financial crime
+The average bank spends around US$48 million per year. In the US alone, banks are spending more than US$25 billion a year on AML compliance. With this much ...
+treas.gov
+OCC Issues Cease and Desist Order, Assesses $450 ...
+Oct 10, 2024 — The Office of the Comptroller of the Currency (OCC) today announced a cease and desist order and a $450 million civil money penalty against TD Bank, NA and TD ...
+
+
+firemon.com
+Continuous Compliance Monitoring: A Guide
+Nov 25, 2024 — Continuous compliance monitoring is the ongoing process of evaluating if systems adhere to regulatory and internal standards, ensuring real- ...
+
+
+osler.com
+Global financial crime compliance costs are trending ...
+Jul 16, 2021 — Financial crime compliance costs have skyrocketed this past year, with the United States increasing total spending by $8.8 billion in 2020 ...
+
+
+internationalbanker.com
+TD Bank's $3 Billion Fine Reveals the Shortcomings of ...
+Nov 20, 2024 — In TD Bank's plea agreement with the DOJ, it agreed to forfeit just over $452 million, $123.5 million of which will go towards a coordinated ...
+
+
+piranirisk.com
+What the TD bank case teaches us about modern AML ...
+Aug 11, 2025 — Explore the 2024 $3B TD Bank AML settlement and discover key lessons on strengthening AML governance and adopting advanced banking ...
+
+
+metricstream.com
+Continuous Control Monitoring (CCM) – What is it, and ...
+CCM is a technology-driven approach that continuously monitors and validates the effectiveness of controls implemented within an organization.
+
+
+logicgate.com
+Continuous Controls Monitoring Explained
+Nov 3, 2025 — Enhanced Risk Visibility and Proactive Management: Continuous visibility allows you to identify control weaknesses and emerging risks before ...
+
+
+researchgate.net
+(PDF) The Cost of AML Compliance
+Jul 15, 2025 — compliance costs, with the total for U.S. and Canadian institutions reaching $61 billion ; LexisNexis survey noted that for small U.S. firms, AML ...
+
+
+cato.org
+The Cost of Regulatory Compliance in the United States
+by F Trebbi · Cited by 62 — Our research shows that regulatory compliance costs of US businesses have grown by about 1 percent each year from 2002 to 2014 in real terms.
+
+
+ey.com
+Disrupting financial crime
+It is estimated the annual cost of money laundering and associated crimes ranges from US$1.4 trillion to US$3.5 trillion. As financial services organizations ...
+mheducation.com
+TD Bank Faces $3 Billion Penalty for Money Laundering
+Nov 14, 2024 — TD Bank agreed to pay a hefty sum exceeding $3 billion, a penalty that includes both criminal fines and regulatory settlements.
+
+
+ibsintelligence.com
+EMEA faces $85bn annual financial crime compliance ...
+Jun 19, 2024 — The total cost of financial crime compliance in EMEA has reached $85 billion. Financial institutions (FIs) are seeking ways to reduce costs while complying ...
+dickinson-wright.com
+5 Notable Anti-Money Laundering Actions From 2024
+Dec 12, 2024 — TD Bank stands out among AML enforcement examples from 2024. In October, TD Bank agreed to a $3.1 billion penalty — about $1.8 billion to the U ...
+
+
+vanta.com
+Continuous control monitoring: Use cases and steps to get ...
+CCM is the use of advanced technologies to monitor the existence and performance of your security, risk management, and co
+
+
+
+
+
+Kora AI
+“Continuous AML Assurance + Remediation, not quarterly fire drills.”
+About
+Kora AI is an autonomous AML RegOps + Continuous Controls Monitoring (CCM) layer for banks and fintechs with serious BSA/AML obligations.
+We don’t replace your transaction monitoring, sanctions screening, or case management systems.
+ We sit on top of your existing stack (core banking, TM/AML platforms, case tools, KYC vendors, payments, warehouse) and continuously:
+Reconciles AML-critical data flows end-to-end
+Runs AML controls as executable checks (SQL/Python) in a secure sandbox
+Collects + normalizes operating evidence automatically
+Maintains a living, audit-ready AML Evidence Graph
+Detects control drift and gaps before exams do
+Orchestrates remediation with owners, deadlines, and proof-of-fix
+
+
+Think: an always-on “AML compliance engineer” + “remediation program manager” for your AML program.
+
+One-liner
+Kora AI is a continuous AML assurance and remediation agent that turns fragmented systems and spreadsheets into a real-time, audit-ready view of your AML program—then keeps it healthy by running checks, collecting evidence, and driving fixes to closure.
+
+What We Do (End-to-End)
+Connect to core, TM/AML, sanctions/KYC, case management, payments, and DW/lake.
+Build a live model of your AML program: obligations → policies → controls → systems → checks → evidence.
+Run continuous control checks over full populations (not samples).
+Auto-collect evidence (logs, configs, metrics, samples) into a normalized graph.
+Detect failures/drift and open exceptions with context + impacted populations.
+Push remediation workflows into your operating system (ServiceNow/Jira/GRC), track closure, and continuously re-verify effectiveness.
+Generate regulator-ready exam and remediation packs anytime.
+
+
+
+Core Modules
+1) AML Evidence Graph (System of Record)
+A graph that links obligations → controls → systems → checks → evidence → exceptions → remediation proof in real time.
+So you can answer instantly:
+“Show the last 12 months of operating effectiveness evidence for TM Scenario 12.”
+“Show every exception, its owner, and proof the fix held for 90 days.”
+
+
+
+2) Code-as-Control Checks (Executable Assurance)
+Controls are expressed as machine-readable templates (e.g., timeliness, completeness, screening coverage, alert/case integrity). The agent generates/executes checks in a locked-down sandbox and writes results back to the evidence graph.
+When checks fail:
+Open an exception
+Attach samples + lineage
+Recommend remediation steps
+Track re-test outcomes automatically
+
+
+
+3) Cross-System AML Reconciliation (Completeness + Consistency)
+Automated reconciliation across: core ↔ TM ↔ case mgmt ↔ KYC ↔ DW.
+ Examples:
+Transaction population parity (counts, sums, latency)
+Alert-to-case closure integrity
+SAR-required case coverage checks
+High-risk customer consistency across systems
+
+
+
+4) Remediation Autopilot (MRA / Consent-Order Ready)
+This is the “make everyone care” module.
+Converts exceptions into remediation plans (owners, due dates, required evidence)
+Integrates with ServiceNow/Jira/GRC
+Tracks closure and continuously re-tests to prove fixes stick
+Produces “proof-of-fix” packages regulators expect after major findings Barron's+1
+
+
+
+5) Transaction Monitoring Scenario & Model Governance (AML-native MRM)
+Continuous “scenario health” monitoring:
+Coverage drift, segmentation changes, threshold edits
+QA results + approvals + tuning history
+KPI trends (false positives, conversion to SAR, backlog risk)
+Auto-generated validation support packs
+
+
+
+6) Regulator-Ready Exam Packs (One Click)
+Prebuilt exam and lookback runbooks that produce structured packs aligned to typical examiner requests:
+Control design + operating effectiveness
+Population coverage (not samples)
+Exceptions and severity
+Remediation status + proof-of-fix
+
+
+
+ICP (Wedge)
+Mid-sized US/Canadian banks, credit unions, and fintechs with:
+Multiple AML/KYC systems
+Heavy manual evidence collection
+Recurring exam pressure
+MRAs / findings or fear of becoming the next headline
+Disproportionate compliance cost burden (economies of scale problem) St. Louis Fed+1
+
+
+
+
+Why This Matters Now
+Enforcement outcomes have shown the catastrophic downside of “program not effective” failures, including multi-billion penalties and operational restrictions. Barron's+1
+
+Outcomes (What You Sell)
+50–80% reduction in manual evidence assembly and reconciliation work
+Continuous control health visibility (not “we’ll find out at exam time”)
+Faster remediation closure with proof-of-fix
+Fewer surprise findings and cleaner internal audit narratives
+Lower probability/severity of enforcement actions (tail-risk reduction) 
+
+
+
+
