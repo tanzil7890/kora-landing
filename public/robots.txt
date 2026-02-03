@@ -1,26 +1,14 @@
-# https://kora.ai/robots.txt
-# Allow all crawlers
-User-agent: *
+User-agent: Googlebot
 Allow: /
 
-# Sitemaps
-Sitemap: https://kora.ai/sitemap.xml
+User-agent: Bingbot
+Allow: /
 
-# Optimize crawling
-Crawl-delay: 1
+User-agent: Twitterbot
+Allow: /
 
-# Disallow admin and private routes
-Disallow: /admin/
-Disallow: /private/
-Disallow: /api/
-Disallow: /_next/static/
+User-agent: facebookexternalhit
+Allow: /
 
-# Allow important assets
-Allow: /images/
-Allow: /static/
-Allow: /*.js$
-Allow: /*.css$
-Allow: /*.png$
-Allow: /*.jpg$
-Allow: /*.svg$
-Allow: /*.ico$ 
+User-agent: *
+Allow: /
