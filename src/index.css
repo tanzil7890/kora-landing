@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 96%;
+    --foreground: 20 14% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 14% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14% 15%;
+
+    --primary: 152 35% 28%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 40 20% 92%;
+    --secondary-foreground: 20 14% 15%;
+
+    --muted: 40 20% 92%;
+    --muted-foreground: 20 10% 45%;
+
+    --accent: 152 35% 28%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 15% 88%;
+    --input: 40 15% 88%;
+    --ring: 152 35% 28%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --cream: 40 33% 96%;
+    --cream-dark: 40 20% 92%;
+    --forest: 152 35% 28%;
+    --forest-light: 152 25% 40%;
+    --charcoal: 20 14% 15%;
+  }
+
+  .dark {
+    --background: 20 14% 10%;
+    --foreground: 40 20% 92%;
+    --card: 20 14% 15%;
+    --card-foreground: 40 20% 92%;
+    --popover: 20 14% 15%;
+    --popover-foreground: 40 20% 92%;
+    --primary: 152 35% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 20 14% 20%;
+    --secondary-foreground: 40 20% 92%;
+    --muted: 20 14% 20%;
+    --muted-foreground: 40 10% 60%;
+    --accent: 152 35% 45%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 20 14% 20%;
+    --input: 20 14% 20%;
+    --ring: 152 35% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .font-serif {
+    font-family: 'DM Serif Display', Georgia, serif;
+  }
+
+  .logo-card {
+    @apply bg-card rounded-2xl shadow-sm border border-border/50 flex items-center justify-center;
+  }
+
+  .section-label {
+    @apply text-xs font-semibold uppercase tracking-widest text-muted-foreground;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:opacity-90 transition-opacity;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border border-foreground/20 text-foreground hover:bg-foreground/5 transition-colors;
+  }
+}
